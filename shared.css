@@ -13,8 +13,8 @@ body {
     top: 0;
     left: 0;
     z-index: 100;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0,0,0,0.5);
 }
 
@@ -48,7 +48,7 @@ body {
 .main-nav {
     display: inline-block;
     text-align: right;
-    width: calc(100% - 4.8rem);
+    width: calc(100% - 75px);
     vertical-align: middle;
 }
 
@@ -80,7 +80,7 @@ body {
     color: white;
     background-color: #ff1b68;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
 }
 
 .main-nav__item--cta a:active,
@@ -124,7 +124,7 @@ body {
     font: inherit;
     border: 1px solid #0e4f1f;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
 }
