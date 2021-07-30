@@ -16,16 +16,20 @@ for(let i = 0; i < planButtons.length; i++) {
 
 backdrop.addEventListener("click", function() {
     //mobileNav.style.display = "none";
-    mobileNav.classList.add("open");
+    mobileNav.classList.remove("open");
     closeModal();
 });
 
-modalNoButton.addEventListener("click", closeModal);
+if(modalNoButton) {
+    modalNoButton.addEventListener("click", closeModal);
+}
 
 function closeModal() {
     //backdrop.style.display = "none";
     //modal.style.display = "none";
-    modal.classList.remove("open");
+    if (modalNoButton) {
+        modal.classList.remove("open");
+    }
     backdrop.classList.remove("open");
 }
 
