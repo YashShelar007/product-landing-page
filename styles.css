@@ -150,8 +150,8 @@
     display: none;
     z-index: 200;
     top: 20%;
-    left: 30%;
-    width: 40%;
+    left: 25%;
+    width: 50%;
     background: white;
     padding: 1rem;
     border: 1px solid #ccc;
@@ -160,7 +160,6 @@
   
   .modal__title {
     text-align: center;
-    margin: 0 0 1rem 0;
   }
   
   .modal__actions {
@@ -192,4 +191,11 @@
   .modal__action--negative:active {
     background: #ff5454;
     border-color: #ff5454;
+  }
+
+  @media (min-width: 40rem) {
+    .modal {
+        left: 30%;
+        width: 40%;
+    }
   }
