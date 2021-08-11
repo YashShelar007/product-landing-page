@@ -4,6 +4,7 @@ var modal = document.querySelector(".modal");
 var modalNoButton = document.querySelector(".modal__action--negative")
 var sideNavButton = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector(".mobile-nav");
+var hostButton = document.querySelector('.main-nav__item--cta')
 
 for(let i = 0; i < planButtons.length; i++) {
     planButtons[i].addEventListener("click",function() {
@@ -38,4 +39,16 @@ sideNavButton.addEventListener("click", function() {
     //backdrop.style.display = "block";
     mobileNav.classList.add("open");
     backdrop.classList.add("open");
+});
+
+hostButton.addEventListener('animationstart', function(event) {
+    console.log("Animation started", event);
+});
+
+hostButton.addEventListener('animationend', function(event) {
+    console.log("animation ended", event);
+});
+
+hostButton.addEventListener('animationiteration', function(event) {
+    console.log("animation iterating", event);
 });
